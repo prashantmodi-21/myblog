@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* .flex-container{
+            display: flex;
+        }
+        .main-container{
+            flex-grow: 1;
+            background: rosybrown;
+            margin: 15px;
+            padding: 5px;
+            font-size: larger;
+            border-radius: 8px;
+        }
+        .child-container{
+            display: flex;
+        }
+        .child{
+            flex-grow: 1;
+            background: bisque;
+            margin: 5px;
+            padding: 2px;
+            font-size: larger;
+            border-radius: 8px;
+        } */
+        /* .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .card img{
+            width: 225px;
+        }
+        .card{
+            width: 250px;
+            box-sizing: border-box;
+            margin: 50px;
+            padding: 15px;
+            box-shadow: 4px 4px 4px grey;
+            /* box-shadow: 4px 4px 4px 2px grey inset; */
+.flexbox-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+nav{
+    background: lightblue;
+    flex-grow: 1;
+}
+aside{
+    background: lightcoral;
+    flex-grow: 1;
+    
+}
+section{
+    background: lightcyan;
+    flex-grow: 3;
+}
+footer{
+    background: lightgoldenrodyellow;
+    flex-grow: 1;
+}
+
+    </style>
+</head>
+<body>
+    <!-- <div class="flex-container">
+        <div class="main-container">1
+        <div class="child-container">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+        </div>
+        <div class="child-container">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+        </div>
+        <div class="child-container">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+    </div>
+        <div class="main-container">2</div>
+        <div class="main-container">3</div>
+    </div>
+
+        <div class="child-container">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+        </div>
+        <div class="child-container">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+        </div>
+        <div class="child-container">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div> -->
+<!-- <div class="container">
+        <div class="card">
+            <img src="./img/camera-g55e3ae85c_1920.jpg" alt="">
+            <h1>This is a heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam excepturi dolor aspernatur ab praesentium placeat neque accusamus culpa laudantium doloremque aliquid quod non minus assumenda corrupti sit, ipsum nostrum consectetur dignissimos ullam dolore dolorem id? Quia ipsa ullam necessitatibus optio veritatis nulla obcaecati corporis, aliquid, adipisci ad voluptates tempore animi consequatur eligendi? In fuga ipsa magnam?</p>
+        </div>
+        <div class="card">
+            <img src="./img/camera-g55e3ae85c_1920.jpg" alt="">
+            <h1>This is a heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam excepturi dolor aspernatur ab praesentium placeat neque accusamus culpa laudantium doloremque aliquid quod non minus assumenda corrupti sit, ipsum nostrum consectetur dignissimos ullam dolore dolorem id? Quia ipsa ullam necessitatibus optio veritatis nulla obcaecati corporis, aliquid, adipisci ad voluptates tempore animi consequatur eligendi? In fuga ipsa magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nostrum eum quas.</p>
+        </div>
+        <div class="card">
+            <img src="./img/camera-g55e3ae85c_1920.jpg" alt="">
+            <h1>This is a heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam excepturi dolor aspernatur ab praesentium placeat neque accusamus culpa laudantium doloremque aliquid quod non minus assumenda corrupti sit, ipsum nostrum consectetur dignissimos ullam dolore dolorem id? Quia ipsa ullam necessitatibus optio veritatis nulla obcaecati corporis, aliquid, adipisci ad voluptates tempore animi consequatur eligendi? In fuga ipsa magnam?</p>
+        </div>
+        <div class="card">
+            <img src="./img/camera-g55e3ae85c_1920.jpg" alt="">
+            <h1>This is a heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam excepturi dolor aspernatur ab praesentium placeat neque accusamus culpa laudantium doloremque aliquid quod non minus assumenda corrupti sit, ipsum nostrum consectetur dignissimos ullam dolore dolorem id? Quia ipsa ullam necessitatibus optio veritatis nulla obcaecati corporis, aliquid, adipisci ad voluptates tempore animi consequatur eligendi? In fuga ipsa magnam?lorem12</p>
+        </div>
+        <div class="card">
+            <img src="./img/camera-g55e3ae85c_1920.jpg" alt="">
+            <h1>This is a heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam excepturi dolor aspernatur ab praesentium placeat neque accusamus culpa laudantium doloremque aliquid quod non minus assumenda corrupti sit, ipsum nostrum consectetur dignissimos ullam dolore dolorem id? Quia ipsa ullam necessitatibus optio veritatis nulla obcaecati corporis, aliquid, adipisci ad voluptates tempore animi consequatur eligendi? In fuga ipsa magnam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iure a optio?</p>
+        </div>
+        <div class="card">
+            <img src="./img/camera-g55e3ae85c_1920.jpg" alt="">
+            <h1>This is a heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam excepturi dolor aspernatur ab praesentium placeat neque accusamus culpa laudantium doloremque aliquid quod non minus assumenda corrupti sit, ipsum nostrum consectetur dignissimos ullam dolore dolorem id? Quia ipsa ullam necessitatibus optio veritatis nulla obcaecati corporis, aliquid, adipisci ad voluptates tempore animi consequatur eligendi? In fuga ipsa magnam?</p>
+        </div>
+    </div> -->
+
+    <div class="flexbox-container">
+        <nav>Navbar</nav>
+        <div class="main-container">
+        <aside>Aside</aside>
+        <section>Main</section>
+        <footer>Footer</footer>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

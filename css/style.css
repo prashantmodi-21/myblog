@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#top-bar{
+    display: flex;
+    line-height: 3rem;
+}
+#social-icon {
+    margin: 0px 15px;
+    width: 45%;
+}
+#social-icon i{
+    cursor: pointer;
+    padding: 5px;
+}
+#brand-logo{
+    width: 55%;
+}
+#brand-logo a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+#navbar{
+    background: black;
+    opacity: 0.75;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+.nav-item{
+    display: flex;
+    
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.nav-item{
+    margin: 10px 30px;
+}
+.nav-item a{
+    color: white;
+    text-decoration: none;
+}
+.nav-item a:hover{
+    color: lightgrey;
+    text-decoration: underline;
+}
+
+.header{
+    position: relative;
+}
+#home{
+    
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    background: rgba(0, 0, 0, 0.2) url('../img/camera-g55e3ae85c_1920.jpg') center/cover;
+    background-blend-mode: darken;
+
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#home h1{
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+#home p{
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+
+#blog-post h1{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 2rem;
+}
+.post{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+ }
+.post img{
+   width: 300px;
+}
+.post-content img{
+    width: 100%;
+}
+.post-content{
+    margin: 30px;
+}
+.post-content h2{
+    margin: 15px;
+}
+.content h2, p{
+    margin: 15px;
+    
+ }
+ .content a{
+    color: black;
+    text-decoration: none;
+ }
+ .content a:hover{
+    color: grey;
+    text-decoration: underline;
+ }
+ #more{
+     text-align: center;
+     margin: 15px;
+ }
+ #more a{
+color: black;
+text-decoration: none;
+ }
+ #more a:hover{
+     text-decoration: underline;
+}
+#about-us{
+    margin: 60px 30px;
+    display: flex;
+} 
+#about-us img{
+    width: 50%;
+}
+#about-content{
+    flex-direction: column;
+    margin: 8px;
+}
+#about-us h2{
+   margin: 15px;
+   font-size: 2rem;
+}    
+form{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 8px;
+}
+form input, textarea{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+
+form button{
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+form button:hover{
+    background: lightgray;
+    cursor: pointer;
+}
+#address{
+    margin: 5px;
+    text-align: center;
+}
+#contact-mail{
+    margin: 5px;
+    
+}
+#aside-section{
+    /* width: 25%; */
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+#aside-section h2{
+    font-size: 1.75rem;
+    margin-top: 30px;
+}
+.container{
+    display: flex;
+}
+#categories li{
+    list-style: none;
+    margin: 15px;
+}
+#categories li a{
+    text-decoration: none;
+    color: black;
+}
+#categories li a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+#search{
+    margin-top: 15px;
+    
+}
+#search input{
+    padding: 5px 20px;
+    border-radius: 6px;
+}
+#search button{
+   background: dodgerblue;
+   color: white;
+   margin-left: 2px;
+   padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#recent-post{
+    margin-top: 8px;
+}
+#recent-post img{
+    width: 100px;
+    height: 100px;
+}
+#recent-post a{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+#recent-post a:hover{
+    text-decoration: underline;
+    color: grey;
+    
+}
+footer{
+    background: rgba(0, 0, 0, 0.7) url('../img/camera-g55e3ae85c_1920.jpg') center/cover;
+    background-blend-mode: darken;
+    height: 350px;
+}
+#footer-section{
+    height: 300px;
+    
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.footer-item{
+    
+    width: 33%;
+    text-align: center;
+}
+.footer-item li{
+    margin: 30px;
+    list-style: none;
+}
+
+.footer-item li a{
+    color: white;
+    text-decoration: none;
+}
+.footer-item li a:hover{
+    color: lightgrey;
+    text-decoration: underline;
+}
+#copy{
+    color: white;
+    
+    text-align: center;
+}
+/* .container{
+    width: 90%;
+    margin: auto;
+}*/
+
+/* Responsive Css */
+
+@media Screen and (max-width: 1000px){
+    #about-us img{
+        width: 100%;
+    }
+    #about-us{
+        flex-direction: column;
+    }
+}
+@media Screen and (max-width: 925px){
+    #top-bar{
+        align-items: center;
+    }
+    #brand-logo{
+       text-align: center;
+    }
+    #social-icon{
+        text-align: center;
+    }
+.container{
+    flex-direction: column;
+}
+#blog-post .post{
+    flex-direction: column;
+    
+}
+#footer-section{
+    flex-direction: column;
+    height: 520px;
+}
+footer{
+    height: 550px;
+}
+#home{
+    text-align: center;
+    height: 460px;
+}
+
+}
+@media Screen and (max-width: 425px){
+    
+    #home h1{
+        font-size: 2rem;
+    }
+    #home p{
+        font-size: 1rem;
+    }
+    #navbar ul{
+        flex-direction: column;
+        
+    }
+    #navbar{
+        position: relative;
+    }
+    #home{
+        height: 355px;
+    }
+    #container::before{
+        top: 100px;
+    }
+    #top-bar{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

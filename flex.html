@@ -1,0 +1,368 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <style>
+body{
+    height: 2048px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#top-bar{
+    display: flex;
+    line-height:3rem;
+}
+#social-icon{
+    margin: 5px;
+}
+#social-icon i{
+    cursor: pointer;
+}
+#brand-logo{
+    width: 80px;
+    margin: auto;
+}
+#brand-logo a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#navbar::before{
+    background: black;
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+    z-index: -1;
+}
+#navbar{
+    
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+.nav-item{
+    display: flex;
+    
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.nav-item{
+    margin: 10px 30px;
+}
+.nav-item a{
+    color: white;
+    text-decoration: none;
+}
+.nav-item a:hover{
+    color: lightgrey;
+    text-decoration: underline;
+}
+#home::before{
+    
+}
+
+#home{
+    
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#home h1{
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+#home p{
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+#container::before{
+    background: url(./img/camera-g55e3ae85c_1920.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 500px;
+    
+    z-index: -1;
+}
+#blog-post{
+    /* width: 75%; */
+}
+#blog-post h1{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 2rem;
+}
+.post{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+ }
+.post img{
+   width: 300px;
+}
+.post-content img{
+    width: 900px;
+}
+.post-content{
+    margin: 30px;
+}
+.post-content h2{
+    margin: 15px;
+}
+.content h2, p{
+    margin: 15px;
+    
+ }
+ .content a{
+    color: black;
+    text-decoration: none;
+ }
+ .content a:hover{
+    color: grey;
+    text-decoration: underline;
+ }
+ #more{
+     text-align: center;
+     margin: 15px;
+ }
+ #more a{
+color: black;
+text-decoration: none;
+ }
+ #more a:hover{
+     text-decoration: underline;
+}
+#about-us{
+    margin: 60px 30px;
+} 
+#about-us img{
+    width: 900px;
+}
+#about-us h2{
+   margin: 15px;
+}    
+form{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 8px;
+}
+form input{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 6px;
+}
+form textarea{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 6px;
+}
+form button{
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 6px;
+}
+form button:hover{
+    background: lightgray;
+    cursor: pointer;
+}
+#address{
+    margin: 5px;
+    text-align: center;
+}
+#contact-mail{
+    margin: 5px;
+    
+}
+#aside-section{
+    /* width: 25%; */
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+#aside-section h2{
+    font-size: 1.75rem;
+    margin-top: 30px;
+}
+header{
+    display: flex;
+}
+#categories li{
+    list-style: none;
+    margin: 15px;
+}
+#categories li a{
+    text-decoration: none;
+    color: black;
+}
+#categories li a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+#search{
+    margin-top: 15px;
+    
+}
+#search input{
+    padding: 5px 20px;
+    border-radius: 6px;
+}
+#search button{
+   background: dodgerblue;
+   color: white;
+   margin-left: 2px;
+   padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#recent-post{
+    margin-top: 8px;
+}
+#recent-post img{
+    width: 100px;
+    height: 100px;
+}
+#recent-post a{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+#recent-post a:hover{
+    text-decoration: underline;
+    color: grey;
+    
+}
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div id="top-bar">
+        <div id="social-icon">
+            <i class="fa-brands fa-facebook fa-lg"></i>
+            <i class="fa-brands fa-twitter fa-lg"></i>
+            <i class="fa-brands fa-youtube fa-lg"></i>
+        </div>
+        <div id="brand-logo">
+            <a href="">My Blog</a>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Navigation Bar -->
+    <div id="container">
+        <nav id="navbar">
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="index.html">Blog</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Navigation Bar End -->
+        
+        
+            <!-- Home Section -->
+            
+            <section id="home">
+                <h1>Welcome to My Blog</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas beatae fuga optio!</p>
+            </section>
+        
+            <!-- Home Section -->
+
+            <!-- Blog section -->
+        <header>
+            <section id="blog-post">
+                <h1>Blog Post</h1>
+                <div class="post">
+                    <img src="./img/japan-g4e2cca847_1920.jpg" alt="">
+                    <div class="content">
+                    <h2><a href="blog-post-1.html">Lorem ipsum dolor sit, amet consectetur adipisicing elit</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat delectus at eos expedita doloribus ullam perferendis ad...<a href="">Read More</a></p></div>
+                </div>
+                <div class="post">
+                    <img src="./img/notepad-g342b9a499_1920.jpg" alt="">
+                    <div class="content">
+                    <h2><a href="blog-post-2.html">Lorem ipsum dolor sit, amet consectetur adipisicing elit</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat delectus at eos expedita doloribus ullam perferendis ad...<a href="">Read More</a></p></div>
+                </div>
+                <div class="post">
+                    <img src="./img/pexels-pierre-blaché-2901209.jpg" alt="">
+                    <div class="content">
+                    <h2><a href="blog-post-3.html">Lorem ipsum dolor sit, amet consectetur adipisicing elit</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat delectus at eos expedita doloribus ullam perferendis ad...<a href="">Read More</a></p></div>
+                </div>
+                <div class="post">
+                    <img src="./img/sunrise-g825adcd7c_1920.jpg" alt="">
+                    <div class="content">
+                    <h2><a href="blog-post-4.html">Lorem ipsum dolor sit, amet consectetur adipisicing elit</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat delectus at eos expedita doloribus ullam perferendis ad...<a href="">Read More</a></p></div>
+                </div><div id="more">
+                    <a href="">Read More</a>
+                </div>
+                
+            </section>
+            <!-- Blog section end -->
+    
+            <!-- Aside Section  -->
+            <aside id="aside-section">
+                <h2>Categories</h2>
+                <div id="categories">
+                    <ul>
+                        <li><a href="">Food</a></li>
+                        <li><a href="">Social</a></li>
+                        <li><a href="">Travel</a></li>
+                        <li><a href="">Technology</a></li>
+                    </ul>
+                </div>
+                <h2>Search</h2>
+                <div id="search">
+                    <input type="search" name="" id="" placeholder="Search Post"><button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <h2>Recent Post</h2>
+                <div id="recent-post">
+                    <div class="post">
+                        <img src="./img/japan-g4e2cca847_1920.jpg" alt="">
+                        <a href="blog-post-1.html">Lorem ipsum dolor sit amet, consectetur</a>
+                    </div>
+                    <div class="post">
+                        <img src="./img/notepad-g342b9a499_1920.jpg" alt="">
+                        <a href="blog-post-2.html">Lorem ipsum dolor sit amet, consectetur</a>
+                    </div>
+                    <div class="post">
+                        <img src="./img/pexels-pierre-blaché-2901209.jpg" alt="">
+                        <a href="blog-post-3.html">Lorem ipsum dolor sit amet, consectetur</a>
+                    </div>
+                    <div class="post">
+                        <img src="./img/sunrise-g825adcd7c_1920.jpg" alt="">
+                        <a href="blog-post-4.html">Lorem ipsum dolor sit amet, consectetur</a>
+                    </div>
+                </div>
+            </aside>
+            <!-- Aside Section End  -->
+        </header>
+    </div>
+    
+        </body>
+        </html>

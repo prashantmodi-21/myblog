@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+#container{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    height: 98vh;
+    grid-gap: 1rem;
+}
+
+#main-container{
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-gap: 1rem;
+}
+#main-sec{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem;
+}
+.box-item{
+    background-color: lightblue;
+    border: 2px solid black;
+    padding: 5px;
+    
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="nav" class="box-item">
+            <nav>Navbar</nav>
+        </div>
+        <div id="main-container">
+            <header class="box-item">Header</header>
+            <div id="main-sec">
+                <section class="box-item">Section</section>
+                <aside class="box-item">Aside</aside>
+            </div>
+            <footer class="box-item">Footer</footer>
+        </div>
+        
+    </div>
+</body>
+</html>

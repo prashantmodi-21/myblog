@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+.container{
+    display: grid;
+    grid-gap: 2rem;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    /* grid-template-rows: 1fr 2fr 3fr 4fr; */
+    background-color: lightgoldenrodyellow;
+    
+    grid-template-areas: 
+    'nav nav nav nav'
+    'section section section aside'
+    'footer footer footer footer'
+    ;
+    
+}
+@media Screen and (max-width: 600px){
+    .container{
+        grid-template-areas: 
+    'nav nav nav nav'
+    'section section section section'
+    'aside aside aside aside'
+    'footer footer footer footer'
+    ;
+    }
+    nav span{
+        display: block;
+    }
+}
+@media Screen and (max-width: 300px){
+    .container{
+        grid-template-areas: 
+    'nav nav nav nav'
+    'section section section section'
+    'aside aside aside aside'
+    'footer footer footer footer'
+    ;
+    }
+    /* nav span{
+        display: block;
+    } */
+    aside{
+        display: none;
+    }
+}
+/* aside{
+        display: none;
+    } */
+.grid-item{
+    /* border: 2px solid black; */
+    border-radius: 6px;
+    background-color: lightblue;
+    padding: 8px;
+}
+nav{
+    grid-area: nav;
+    text-align: center;
+}
+section{
+    grid-area: section;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+/* .grid-item:first-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+} */
+/* .grid-item:first-child{
+    grid-row-start: 1;
+    grid-row-end: 3;
+} */
+/* .grid-item:first-child{
+    grid-column: 1/ span 4;
+    grid-row: 1/span 4;
+} */
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="grid-item">item-1</div>
+        <div class="grid-item">item-2</div>
+        <div class="grid-item">item-3</div>
+        <div class="grid-item">item-4</div>
+        <div class="grid-item">item-1</div>
+        <div class="grid-item">item-2</div>
+        <div class="grid-item">item-3</div>
+        <div class="grid-item">item-4</div>
+    </div> -->
+
+    <div class="container">
+        <nav class="grid-item">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact</span>
+            <span>Product</span>   
+        </nav>
+        <section class="grid-item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut tempore tempora alias deserunt asperiores fuga dolores ad, laborum sed cum earum, dignissimos consectetur quibusdam quisquam, minima iusto aliquam maiores deleniti sit optio inventore numquam perspiciatis? Expedita, obcaecati commodi. Esse veniam ducimus cupiditate ea laborum illum quasi ipsam debitis eius impedit possimus delectus, repellendus architecto at. Vel iste iusto dolorem tenetur similique obcaecati possimus minima incidunt corrupti sunt perspiciatis eligendi ut consectetur, sint fugiat ea cupiditate in deleniti earum odit numquam tempore unde! Alias consequatur nesciunt nam veritatis distinctio explicabo incidunt. Consectetur labore corporis, deserunt commodi repellat nam quae, laudantium sapiente distinctio hic error tempora amet ut magnam soluta? Numquam, sed neque. Vitae.
+        </section>
+        <aside class="grid-item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, officia labore. Ex, optio. Quae, impedit vero sit sapiente expedita necessitatibus? Illum beatae quidem sapiente sunt voluptates sit porro, fuga totam voluptas ratione qui aliquid fugit magnam eligendi deleniti quas, iste vel quia in cum aperiam voluptatum vitae numquam? Dignissimos veniam fugiat, ea impedit sed blanditiis voluptates.
+        </aside>
+        <footer class="grid-item">
+            Copyright@. All rights reserved
+        </footer>
+    </div>
+</body>
+</html>
